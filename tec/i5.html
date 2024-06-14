@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais da Psytech</title>
+    <link rel="stylesheet" href="i5.css">
+</head>
+<body>
+    <nav>
+
+        <div class="logo">
+            <a href="i1.html"><img src="logo.png" alt="Logo" class="logo" ></a> 
+        </div>
+        
+        <ul>
+            <<li><a href="i2.html">Cadastro</a></li>
+            <li><a href="i3.html">Consulta</a></li>
+            <li><a href="i5.html">Profissionais</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="myInput" placeholder="Pesquisar...">
+            <button onclick="search()">🔎</button>
+          </div>
+    </nav>
+    <div class="container">
+        <div class="professional-card" onclick="showModal()">
+            <img src="13.png" alt="13" class="professional-photo">
+            <h2 class="professional-name">Dr. João Silva</h2>
+        </div>
+        <br>
+        <div class="professional-card" onclick="showModal()">
+            <img src="14.png" alt="13" class="professional-photo">
+            <h2 class="professional-name">Dr. Erica Santos </h2>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Currículo de Dr. João Silva</h2>
+            <img src="c23.png" alt="">
+        </div>
+    </div>
+
+
+
+    <br>
+    <br>
+    <footer id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Número :(99) 9999-9999</p>
+        <p>Email: psytche044@gmail.com</p>
+    </footer>
+
+
+    <script src="i5.js"></script>
+</body>
+</html>

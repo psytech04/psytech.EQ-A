@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="i2.css">
+</head>
+<body>
+    <nav>
+       <a href="i1.html"><img src="logo.png" alt="Logo" class="logo" ></a> 
+        <ul>
+            <li><a href="#sobre">Logn</a></li>
+            <li><a href="#informacoes">Consulta</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="form-container">
+        <h2>Formulário de Cadastro</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="dob">Data de Nascimento:</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contato:</label>
+            <input type="text" id="contact" name="contact" required>
+          </div>
+          <div class="form-group">
+            <label for="location">Localização:</label>
+            <input type="text" id="location" name="location" required>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+        <div id="successMessage" class="hidden">Formulário enviado com sucesso!</div>
+      </div>
+      <br>
+      <br>
+     
+<script src="i2.js"></script>
+</body>
+</html>
